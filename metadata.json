@@ -1,0 +1,5 @@
+{
+  "name": "Sentinel AI - IDS Dashboard",
+  "description": "A real-time AI-Based Intrusion Detection System dashboard visualizing network traffic, potential threats, and model explainability (SHAP). Features live alerts and AI-driven mitigation advice.",
+  "requestFramePermissions": []
+}
