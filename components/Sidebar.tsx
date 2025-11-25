@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, LayoutDashboard, List, Settings, Activity, User, Github, Linkedin, Globe, LogOut } from 'lucide-react';
+import { ShieldAlert, LayoutDashboard, List, Settings, Activity, User, Github, Linkedin, Globe, LogOut, UserCircle } from 'lucide-react';
 import { AUTHOR_NAME, AUTHOR_GITHUB, AUTHOR_LINKEDIN } from '../constants';
 
 interface SidebarProps {
@@ -15,6 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onLogout }) 
     { id: 'analysis', label: 'Threat Analysis', icon: Activity },
     { id: 'phishing', label: 'Phishing Detector', icon: Globe },
     { id: 'settings', label: 'System Config', icon: Settings },
+    { id: 'developer', label: 'About Developer', icon: UserCircle },
   ];
 
   return (

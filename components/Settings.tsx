@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Settings as SettingsIcon, Save, Bell, Shield, Server, Key, RefreshCw, Moon, Sun, ToggleLeft, ToggleRight, UserCircle, Github, Linkedin, Mail, Phone } from 'lucide-react';
-import { AUTHOR_NAME, AUTHOR_EMAIL, AUTHOR_GITHUB, AUTHOR_LINKEDIN, AUTHOR_CONTACT } from '../constants';
+import { Settings as SettingsIcon, Save, Bell, Shield, Server, Key, RefreshCw, ToggleLeft, ToggleRight } from 'lucide-react';
 
 const Settings: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -196,37 +195,6 @@ const Settings: React.FC = () => {
                </div>
             </div>
           </div>
-        </div>
-
-        {/* Developer Info Card */}
-        <div className="bg-gradient-to-r from-slate-900 to-indigo-950/30 border border-indigo-500/20 rounded-2xl p-6 shadow-xl md:col-span-2">
-           <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-indigo-500/10 rounded-full flex items-center justify-center border border-indigo-500/30">
-                <UserCircle className="w-8 h-8 text-indigo-400" />
-              </div>
-              <div className="flex-1">
-                 <h3 className="text-xl font-bold text-white">{AUTHOR_NAME}</h3>
-                 <p className="text-indigo-300 text-sm font-medium">Project Author & Lead Developer</p>
-                 <p className="text-slate-400 text-xs mt-2 leading-relaxed">
-                   Cybersecurity enthusiast and full-stack developer. This project demonstrates advanced IDS capabilities using Generative AI for real-time threat analysis and mitigation.
-                 </p>
-                 
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-                    <a href={`mailto:${AUTHOR_EMAIL}`} className="flex items-center gap-2 text-xs text-slate-400 hover:text-white transition-colors">
-                       <Mail className="w-3 h-3" /> {AUTHOR_EMAIL}
-                    </a>
-                    <a href={`tel:${AUTHOR_CONTACT}`} className="flex items-center gap-2 text-xs text-slate-400 hover:text-white transition-colors">
-                       <Phone className="w-3 h-3" /> {AUTHOR_CONTACT}
-                    </a>
-                    <a href={`https://${AUTHOR_LINKEDIN}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs text-slate-400 hover:text-indigo-400 transition-colors">
-                       <Linkedin className="w-3 h-3" /> LinkedIn Profile
-                    </a>
-                    <a href={`https://${AUTHOR_GITHUB}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs text-slate-400 hover:text-indigo-400 transition-colors">
-                       <Github className="w-3 h-3" /> GitHub Portfolio
-                    </a>
-                 </div>
-              </div>
-           </div>
         </div>
 
       </div>

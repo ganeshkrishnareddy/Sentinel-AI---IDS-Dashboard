@@ -5,6 +5,7 @@ import ThreatAnalysis from './components/ThreatAnalysis';
 import Login from './components/Login';
 import Settings from './components/Settings';
 import PhishingDetector from './components/PhishingDetector';
+import Developer from './components/Developer';
 import { Alert, TrafficStats, TrafficPoint } from './types';
 import { generateMockAlert, generateTrafficPoint } from './services/mockDataService';
 import { INITIAL_STATS } from './constants';
@@ -93,6 +94,8 @@ const App: React.FC = () => {
         return <PhishingDetector />;
       case 'settings':
         return <Settings />;
+      case 'developer':
+        return <Developer />;
       case 'alerts':
         return (
           <div className="p-8 animate-in fade-in">

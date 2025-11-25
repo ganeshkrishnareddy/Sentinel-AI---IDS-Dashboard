@@ -5,6 +5,7 @@ export const AUTHOR_CONTACT = "+91-8374622779";
 export const AUTHOR_EMAIL = "pganeshkrishnareddy@gmail.com";
 export const AUTHOR_LINKEDIN = "linkedin.com/in/pganeshkrishnareddy";
 export const AUTHOR_GITHUB = "github.com/ganeshkrishnareddy";
+export const AUTHOR_PORTFOLIO = "pganeshkrishnareddy.netlify.app";
 
 export const INITIAL_STATS: TrafficStats = {
   totalPackets: 12450,
